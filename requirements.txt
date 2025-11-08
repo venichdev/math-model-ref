@@ -1,0 +1,18 @@
+# Electric Vehicle Calculator - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core numerical computing
+numpy>=1.20.0
+
+# Visualization and plotting
+matplotlib>=3.3.0
+
+# Scientific computing (integration, interpolation)
+scipy>=1.6.0
+
+# Optional but recommended for Jupyter notebook usage
+# jupyter>=1.0.0
+# ipython>=7.0.0
+
+# Optional for data analysis
+# pandas>=1.2.0
