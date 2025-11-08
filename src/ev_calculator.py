@@ -30,13 +30,21 @@ Author: Based on math-model-ref repository
 Date: 2025-01-08
 """
 
-import numpy as np
-import matplotlib.pyplot as plt
+import os
+import sys
+import warnings
 from dataclasses import dataclass, field
 from typing import Tuple, Dict, List, Optional
+
+import matplotlib
+import numpy as np
 from scipy.integrate import cumulative_trapezoid
 from scipy.interpolate import interp1d
-import warnings
+
+if (sys.stdin is None or not sys.stdin.isatty()) and "MPLBACKEND" not in os.environ:
+    matplotlib.use("Agg")
+
+import matplotlib.pyplot as plt
 
 
 # ============================================================================
@@ -1068,6 +1076,17 @@ def example_4_model_validation():
     print("="*70)
 
 
+def wait_for_enter(prompt: str) -> None:
+    """Pause between demos only when stdin is interactive."""
+    if sys.stdin is None or not sys.stdin.isatty():
+        print(f"{prompt.rstrip()} [auto-continue]")
+        return
+    try:
+        input(prompt)
+    except EOFError:
+        print(f"{prompt.rstrip()} [auto-continue]")
+
+
 def main():
     """
     Main demonstration program.
@@ -1091,13 +1110,13 @@ def main():
 
     example_1_basic_range_calculation()
 
-    input("\n\nPress Enter to continue to Example 2...")
+    wait_for_enter("\n\nPress Enter to continue to Example 2...")
     example_2_wltp_cycle_simulation()
 
-    input("\n\nPress Enter to continue to Example 3...")
+    wait_for_enter("\n\nPress Enter to continue to Example 3...")
     example_3_temperature_impact()
 
-    input("\n\nPress Enter to continue to Example 4 (Validation)...")
+    wait_for_enter("\n\nPress Enter to continue to Example 4 (Validation)...")
     example_4_model_validation()
 
     print("\n\n" + "="*70)
