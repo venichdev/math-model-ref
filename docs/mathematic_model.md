@@ -37,8 +37,8 @@ This document provides a **rigorous, validated, and critically analyzed** collec
 **Suggested Citation:**
 
 ```bibtex
-[Your Name]. (2025). Electric Vehicle Engineering: Mathematical Models and Equations
-(Master's Thesis Edition, Version 2.0). [Institution]. DOI: [if applicable]
+Suphakorn Y. (2025). Electric Vehicle Engineering: Mathematical Models and Equations
+(Master's Thesis Edition, Version 2.0). Naresuan University. DOI: [if applicable]
 ```
 
 ---

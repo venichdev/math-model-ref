@@ -149,7 +149,7 @@ This repository is **excellent for sharing** with students, researchers, and eng
 - [x] **Add LICENSE file** ✅ DONE (MIT License)
 - [x] **Add .gitignore** ✅ DONE
 - [x] **Update README.md** ✅ DONE (highlights implementation)
-- [ ] **Add your name/affiliation** (replace [Your Name] in LICENSE)
+- [ ] **Add your name/affiliation** (replace Suphakorn Y. in LICENSE)
 - [ ] **Test on fresh environment** (verify dependencies work)
 - [ ] **Add contact info** (email, GitHub, etc.)
 
@@ -446,7 +446,7 @@ You've created something genuinely useful that fills a gap between:
 
 ### **Immediate (Today)**
 
-1. [ ] Replace `[Your Name]` in LICENSE file
+1. [ ] Replace `Suphakorn Y.` in LICENSE file
 2. [ ] Add contact info to README
 3. [ ] Test on clean Python environment
 4. [ ] Run full test suite one more time
